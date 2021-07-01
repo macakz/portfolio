@@ -1,9 +1,14 @@
+import React from "react";
+import { Switch, Route, Link, } from "react-router-dom";
+
+
 function Header () {
+
     return (
         <div className="App">
             <h1>Headerpage</h1>
-            <button>Home</button>
-            <button>Blog</button>
+            <Link to="/">Home</Link>
+            <Link to="/Blog">Blog</Link>
         </div>
     );
 }
