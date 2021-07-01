@@ -14,7 +14,7 @@ function App () {
         <Route path="/Blog" component={Blog} />
       </Switch>
     </div>
-  );
+  )
 }
 
 export default App;

@@ -1,9 +1,8 @@
 function Blog () {
     return (
-        <div className="App">
+        <div>
             <h1>Blog</h1>
-        </div>
-    );
+        </div>)
 }
 
 export default Blog
