@@ -6,8 +6,12 @@ function Header () {
 
     return (
         <div>
-            <Link to="/">Home</Link>
-            <Link to="/Blog">Blog</Link>
+            <nav>
+                <Link to="/">Home</Link>
+                <Link to="/Blog">Blog</Link>
+                <Link to="/Contact">Contact</Link>
+            </nav>
+
         </div>
     )
 }
