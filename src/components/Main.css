@@ -1,0 +1,11 @@
+.navContainer {
+    display:inline-flex
+}
+
+.homeContainer {
+
+}
+
+.linksContainer {
+align-content: flex-end;
+}

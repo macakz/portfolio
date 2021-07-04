@@ -1,16 +1,20 @@
 import React from "react";
-import { Switch, Route, Link, } from "react-router-dom";
-
-
+import { Link, } from "react-router-dom";
+import './Main.css';
 function Header () {
 
     return (
         <div>
             <h1>Alexander McKerrow's Blog</h1>
-            <nav>
-                <Link to="/">Home</Link>
-                <Link to="/Blog">Blog</Link>
-                <Link to="/Contact">Contact</Link>
+            <nav className="navContainer">
+                <div className="homeContainer">
+                    <Link to="/">Home</Link>
+                </div>
+                <div className="linksContainer">
+                    <Link to="/Blog">Blog</Link>
+                    <Link to="/Contact">Contact</Link>
+                </div>
+
             </nav>
 
         </div>
