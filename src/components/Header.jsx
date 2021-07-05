@@ -9,6 +9,7 @@ function Header () {
             <nav className="navMenu">
                 <Link className="navLink" to="/">Home</Link>
                 <Link className="navLink" to="/Blog">Blog</Link>
+                <Link className="navLink" to="/Work">Work</Link>
                 <Link className="navLink" to="/Contact">Contact</Link>
                 <div className="dot"></div>
             </nav>
