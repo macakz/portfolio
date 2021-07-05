@@ -16,11 +16,11 @@ function Blog () {
                 <div className="bP">
                     <h1>title</h1>
                     <h2>subtitle</h2>
-                    <p></p>
-                    <div className="bPImageContainer">
-                        <img src={testphoto} alt="test" />
-                    </div>
                 </div>
+                <div className="bPImageContainer">
+                    <img src={testphoto} alt="test" />
+                </div>
+
             </div>
             <div className="bPContainer">
                 <h1>title</h1>

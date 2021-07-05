@@ -14,9 +14,9 @@ body {
         padding: .5em;
         border: 3px solid burlywood;
         margin-bottom: .5em;
+        display: flex;
     }
     .bp {
-        
     }
     .bPContainer h1{
         font-size: 50px;
@@ -28,7 +28,11 @@ body {
 
     }
     .bPImageContainer {
-
+    
+    }
+    .bPImageContainer img {
+        height: 200px;
+        width: auto;
     }
 /* work */
 
