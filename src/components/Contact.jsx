@@ -3,19 +3,24 @@ import { useForm } from "react-hook-form";
 
 
 function Contact () {
-    const { register, handleSubmit,  formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     return (
         <div className="contactContainer">
             <form onSubmit={handleSubmit(onSubmit)}>
-                {/* register your input into the hook by invoking the "register" function */}
-                <input defaultValue="test" {...register("example")} />
+                <div className="inputContainer">
+                    <p>Name:</p>
+                    <input {...register("name", { required: true })} />
+                </div>
+                <div className="inputContainer">
+                    <p>Subject:</p>
 
-                {/* include validation with required or other standard HTML validation rules */}
-                <input {...register("exampleRequired", { required: true })} />
-                {/* errors will return when field validation fails  */}
-                {errors.exampleRequired && <span>This field is required</span>}
-
+                    <input  {...register("subject", { required: true })} />
+                </div>
+                <div className="inputContainer">
+                    <p>Message:</p>
+                    <input {...register("exampleRequired", { required: true })} />
+                </div>
                 <input type="submit" />
             </form>
         </div>
