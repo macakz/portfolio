@@ -6,17 +6,12 @@ function Header () {
     return (
         <div>
             <h1 className="headerTitle">Alexander McKerrow's Blog</h1>
-            <nav className="navContainer">
-                <div className="homeContainer">
-                    <Link to="/">Home</Link>
-                </div>
-                <div className="linksContainer">
-                    <Link to="/Blog">Blog</Link>
-                    <Link to="/Contact">Contact</Link>
-                </div>
-
+            <nav className="navMenu">   
+                    <Link className="navLink" to="/">Home</Link>     
+                    <Link className="navLink" to="/Blog">Blog</Link>
+                    <Link className="navLink" to="/Contact">Contact</Link>
+            <div className="dot"></div>
             </nav>
-
         </div>
     )
 }
