@@ -1,8 +1,20 @@
+import React from "react"
+import './CSS/Main.css'
+
 function Blog () {
     return (
-        <div>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempore nihil dolores magnam? Reiciendis harum illum aliquid praesentium perferendis sunt iure. Veritatis, provident ipsam! Quam pariatur porro exercitationem nam minima.</h1>
-        </div>)
+        <div className="sectionContainer">
+            <div className="blogPostContainer">
+                <h1>title</h1>
+                <h2>subtitle</h2>
+                <p></p>
+                <div className="blogPostImagContainer">
+                    <img src="" alt="" />
+                </div>
+            </div>
+        </div >
+    )
+
 }
 
 export default Blog
