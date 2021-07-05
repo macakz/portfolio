@@ -1,3 +1,8 @@
+.headerTitle {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+}
 .navContainer {
     display:inline-flex
 }
