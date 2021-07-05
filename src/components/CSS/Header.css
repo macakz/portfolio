@@ -1,0 +1,26 @@
+.headerTitle {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+}
+
+.navMenu {
+    text-align: center;
+    width: auto;
+    padding-bottom: .5em;
+    border-bottom: 5px solid black;
+}
+.navLink {
+padding: 1.5em;
+text-decoration: none;
+color: inherit;
+font-family: 'Poiret One', cursive; 
+font-weight: bold;
+font-size: 1.5em;
+transition: ease-in-out;
+}
+.navLink:hover {
+    
+    text-decoration: underline;
+    color: rgb(175, 10, 175);
+    }
