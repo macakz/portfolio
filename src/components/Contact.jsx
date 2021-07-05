@@ -1,20 +1,23 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
 
 function Contact () {
-
+    const { register, handleSubmit,  formState: { errors } } = useForm();
+    const onSubmit = data => console.log(data);
     return (
         <div className="contactContainer">
-            <div className="contactDetails">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1> 
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            </div>
+            <form onSubmit={handleSubmit(onSubmit)}>
+                {/* register your input into the hook by invoking the "register" function */}
+                <input defaultValue="test" {...register("example")} />
+
+                {/* include validation with required or other standard HTML validation rules */}
+                <input {...register("exampleRequired", { required: true })} />
+                {/* errors will return when field validation fails  */}
+                {errors.exampleRequired && <span>This field is required</span>}
+
+                <input type="submit" />
+            </form>
         </div>
     )
 }
