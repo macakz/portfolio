@@ -4,6 +4,7 @@
     left:0;
     bottom:0;
     right:0;    
+    border-top: 5px solid black;
 }
 
 /* link footer section */
@@ -12,7 +13,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+    color: inherit;
+}
 *:focus,
 *:active {
     outline: none !important;
