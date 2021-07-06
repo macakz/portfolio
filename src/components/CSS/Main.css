@@ -9,25 +9,39 @@ body {
     height: auto;
     display: block;
 }
-.flexBox {
+.flexbox {
     display: flex;
     align-items: center;
 }
 /* home */
+.banner {
+    margin: .5em;
+    padding: .5em;
+    border: 3px solid black;
+}
+.banner .imageContainer {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+}
 
+.banner .content {
+    width: 40%;
+    padding-left: .5em;
+}
 /* blog */
 .blogPost {
     margin: .5em;
     padding: .5em;
     border: 3px solid black;
 }
-.imageContainer {
+.blogPost .imageContainer {
     width: 60%;
     height: auto;
     overflow: hidden;
 }
 
-.bPContent {
+.blogPost .content {
     width: 40%;
     padding-left: .5em;
 }

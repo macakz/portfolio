@@ -5,11 +5,12 @@ function Blog () {
     return (
         <>
             <div className="blogPost">
-                <div className="flexBox">
-                    <div className="bPContent">
+                <div className="flexbox">
+                    <div className="content">
                         <h1>title</h1>
                         <h3>date</h3>
                         <p>content</p>
+                        <button>Read more</button>
                     </div>
                     <div className="imageContainer">
                         <img src={testphoto} alt="" />
