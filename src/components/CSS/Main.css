@@ -51,13 +51,23 @@ body {
 
 .contactContainer {
 margin: 1em;
-text-align: center;
 }
 
+.formContainer {
+    background-color:lemonchiffon;
+    padding-left: 2em;
+
+}
 .inputContainer {
-
 }
 
+.inputContainer input {
+    width: 33%;
+}
+.inputContainer textarea {
+    width: 50%;
+    height: 10em;
+}
 .inputContainer p {
     padding-left: -100px;
 }
