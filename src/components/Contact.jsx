@@ -1,11 +1,12 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import emailjs from 'emailjs-com';
-
+import { userID, serviceID } from './config'
 
 function Contact () {
+    console.log(userID)
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => emailjs.send('service_8advsz8', 'contactForm', data, 'user_209MN1gR3y2lDleTZJdhx')
+    const onSubmit = data => emailjs.send( serviceID , 'contactForm', data, userID)
         .then((response) => {
             console.log('SUCCESS!', response.status, response.text);
         }, (err) => {
@@ -29,7 +30,6 @@ function Contact () {
                 </div>
                 <div className="inputContainer">
                     <p>Subject:</p>
-
                     <input  {...register("subject", { required: true })} />
                 </div>
                 <div className="inputContainer">
