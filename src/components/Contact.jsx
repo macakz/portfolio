@@ -13,6 +13,11 @@ function Contact () {
                     <input {...register("name", { required: true })} />
                 </div>
                 <div className="inputContainer">
+                    <p>Email:</p>
+
+                    <input  {...register("email", { required: true })} />
+                </div>
+                <div className="inputContainer">
                     <p>Subject:</p>
 
                     <input  {...register("subject", { required: true })} />
