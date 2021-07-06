@@ -6,22 +6,22 @@ function Footer () {
 
     return (
         <div className="footerContainer">
-            <div class="wrapper">
+            <div className="wrapper">
                 <a href="https://www.linkedin.com/in/alexandermckerrow">
-                    <div class="icon linkedin">
-                        <div class="tooltip">LinkedIn</div>
+                    <div className="icon linkedin">
+                        <div className="tooltip">LinkedIn</div>
                         <span><AiFillLinkedin /></span>
                     </div>
                 </a>
                 <a href="https://www.github.com/macakz">
-                    <div class="icon github">
-                        <div class="tooltip">Github</div>
+                    <div className="icon github">
+                        <div className="tooltip">Github</div>
                         <span><AiFillGithub /></span>
                     </div>
                 </a>
                 <a href="https://www.instagram.com/macakz">
-                    <div class="icon instagram">
-                        <div class="tooltip">Instagram</div>
+                    <div className="icon instagram">
+                        <div className="tooltip">Instagram</div>
                         <span><AiFillInstagram /></span>
                     </div>
                 </a>

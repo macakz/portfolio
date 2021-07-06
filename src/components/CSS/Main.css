@@ -51,8 +51,13 @@ body {
 
 .contactContainer {
 margin: 1em;
+text-align: center;
 }
 
 .inputContainer {
 
+}
+
+.inputContainer p {
+    padding-left: -100px;
 }

@@ -4,7 +4,6 @@ import emailjs from 'emailjs-com';
 import { userID, serviceID } from './config'
 
 function Contact () {
-    console.log(userID)
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => emailjs.send( serviceID , 'contactForm', data, userID)
         .then((response) => {
@@ -21,7 +20,6 @@ function Contact () {
                 </div>
                 <div className="inputContainer">
                     <p>Email:</p>
-
                     <input  {...register("fromEmail", { required: true })} />
                 </div>
                 <div className="inputContainer">
