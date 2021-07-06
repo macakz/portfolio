@@ -3,42 +3,21 @@ import './CSS/Main.css'
 import testphoto from '../images/test.jpeg'
 function Blog () {
     return (
-        <div className="sectionContainer">
-            <div className="bPContainer">
-                <h1>title</h1>
-                <h2>subtitle</h2>
-                <p></p>
-                <div className="bPImageContainer">
-                    <img src={testphoto} alt="test" />
+        <>
+            <div className="blogPost">
+                <div className="flexBox">
+                    <div className="bPContent">
+                        <h1>title</h1>
+                        <h3>date</h3>
+                        <p>content</p>
+                    </div>
+                    <div className="imageContainer">
+                        <img src={testphoto} alt="" />
+                    </div>
                 </div>
             </div>
-            <div className="bPContainer">
-                <div className="bP">
-                    <h1>title</h1>
-                    <h2>subtitle</h2>
-                </div>
-                <div className="bPImageContainer">
-                    <img src={testphoto} alt="test" />
-                </div>
+        </>
 
-            </div>
-            <div className="bPContainer">
-                <h1>title</h1>
-                <h2>subtitle</h2>
-                <p></p>
-                <div className="bPImageContainer">
-                    <img src={testphoto} alt="test" />
-                </div>
-            </div>
-            <div className="bPContainer">
-                <h1>title</h1>
-                <h2>subtitle</h2>
-                <p></p>
-                <div className="bPImageContainer">
-                    <img src={testphoto} alt="test" />
-                </div>
-            </div>
-        </div >
     )
 
 }

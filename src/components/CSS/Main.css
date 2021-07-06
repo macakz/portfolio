@@ -1,39 +1,36 @@
+/* general */
+
 body {
     margin: 0;
     padding: 0;
 }
-
+.imageContainer img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.flexBox {
+    display: flex;
+    align-items: center;
+}
 /* home */
 
 /* blog */
-.sectionContainer{
+.blogPost {
     margin: .5em;
     padding: .5em;
-    }
-    .bPContainer{
-        padding: .5em;
-        border: 3px solid burlywood;
-        margin-bottom: .5em;
-        display: flex;
-    }
-    .bp {
-    }
-    .bPContainer h1{
-        font-size: 50px;
-    }
-    .bPContainer h2 {
+    border: 3px solid black;
+}
+.imageContainer {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+}
 
-    }
-    .bPContainer p {
-
-    }
-    .bPImageContainer {
-    
-    }
-    .bPImageContainer img {
-        height: 200px;
-        width: auto;
-    }
+.bPContent {
+    width: 40%;
+    padding-left: .5em;
+}
 /* work */
 
 /* contact */
