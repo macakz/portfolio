@@ -16,16 +16,21 @@ import Work from './components/Work';
 
 function App () {
   return (
-    <div className="App">
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/Blog" component={Blog} />
-        <Route path="/Contact" component={Contact} />
-        <Route path="/Work" component={Work} />
-      </Switch>
-      <Footer />
-    </div>
+    <>
+      <div className="page-container">
+        <div className="content-wrap">
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/Blog" component={Blog} />
+            <Route path="/Contact" component={Contact} />
+            <Route path="/Work" component={Work} />
+          </Switch>
+        </div>
+        <Footer />
+
+      </div>
+    </>
   )
 }
 

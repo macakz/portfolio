@@ -54,11 +54,13 @@ function Contact () {
                         <textarea {...register("message", { required: true, pattern: /^[a-z0-9]+$/i })} />
                     </div>
                     <div className="error">
-                        {errors.message?.type === "required" && <span>This field is required</span>}
                         {errors.message?.type === "pattern" && <span>Please only enter numbers or letters</span>}
                     </div>
                     <div>*Mandtory fields</div>
+                    <div className="submitContainer">
                     <input type="submit" />
+                    </div>
+                    
                 </form>
             </div>
         </div>

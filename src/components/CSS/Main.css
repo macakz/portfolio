@@ -54,8 +54,9 @@ margin: 1em;
 }
 
 .formContainer {
-    background-color:lemonchiffon;
-    padding-left: 2em;
+    background-color:rgb(236, 233, 233);
+    padding: 1em;
+    
 
 }
 .inputContainer {

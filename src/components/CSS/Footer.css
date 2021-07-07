@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .footerContainer {
-    position:fixed;
+    position: relative;
     bottom: 0;
     width: 100%;  
     border-top: 5px solid black;
