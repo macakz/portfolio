@@ -52,8 +52,11 @@ body, button, input  {
 .blogPost .content button {
     width: 10em;
 }
-/* work */
-
+/* about */
+.about img {
+    height: 400px;
+    border-radius: 5%
+}
 /* contact */
 
 .contactContainer {

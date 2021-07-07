@@ -1,19 +1,24 @@
 import React from "react";
+import profile from '../data/images/profile.jpg'
 
 
 function About () {
 
     return (
-        <div>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1> 
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis eligendi ut quidem in. Perferendis veritatis illum molestias, eos, est ab culpa amet reprehenderit molestiae sint fugiat aliquid aliquam pariatur?</h1>                
-        </div>
+        <>
+            <div className="about" >
+                <div className="flexbox">
+                    <div className="content">
+                        <h1>hi</h1>
+                        <h3>hi</h3>
+                        <p></p>
+                    </div>
+                    <div>
+                        <img src={profile} alt="" />
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
 
