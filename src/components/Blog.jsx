@@ -1,7 +1,7 @@
 import React from "react"
 import './CSS/Main.css'
-import testphoto from '../images/test.jpeg'
-import posts from '../blogPosts.json'
+import testphoto from '../data/images/test.jpeg'
+import posts from '../data/blogPosts.json'
 function Blog () {
 
     return (
