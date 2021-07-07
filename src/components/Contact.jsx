@@ -14,7 +14,7 @@ function Contact () {
     return (
 
         <div className="contactContainer">
-            <h1>Flick me a message:</h1>
+            <h1>Send me a message</h1>
             <div className="formContainer">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="inputContainer">
@@ -22,49 +22,49 @@ function Contact () {
                         <input {...register("fromName", { required: true, pattern: /^[A-Za-z]+$/i })} />
                     </div>
                     <div className="error">
-                        {errors.fromName?.type === "required" && <span>This field is required</span>}
-                        {errors.fromName?.type === "pattern" && <span>Please enter a valid name</span>}
+                        {errors.fromName?.type === "required" && <p>This field is required</p>}
+                        {errors.fromName?.type === "pattern" && <p>Please enter a valid name</p>}
                     </div>
                     <div className="inputContainer">
                         <p>Email*</p>
                         <input  {...register("fromEmail", { required: true, pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ })} />
                     </div>
                     <div className="error">
-                        {errors.fromEmail?.type === "required" && <span>This field is required</span>}
-                        {errors.fromEmail?.type === "pattern" && <span>Please enter a valid email</span>}
+                        {errors.fromEmail?.type === "required" && <p>This field is required</p>}
+                        {errors.fromEmail?.type === "pattern" && <p>Please enter a valid email</p>}
                     </div>
                     <div className="inputContainer">
                         <p>Phone Number*</p>
                         <input  {...register("phoneNumber", { required: true, pattern: /([1-9][0-9]*)|0/ })} />
                     </div>
                     <div className="error">
-                        {errors.phoneNumber?.type === "required" && <span>This field is required</span>}
-                        {errors.phoneNumber?.type === "pattern" && <span>Please enter a valid phone number</span>}
+                        {errors.phoneNumber?.type === "required" && <p>This field is required</p>}
+                        {errors.phoneNumber?.type === "pattern" && <p>Please enter a valid phone number</p>}
                     </div>
                     <div className="inputContainer">
                         <p>Subject*</p>
                         <input  {...register("subject", { required: true, pattern: /^[a-z0-9]+$/i })} />
                     </div>
                     <div className="error">
-                        {errors.phoneNumber?.type === "required" && <span>This field is required</span>}
-                        {errors.phoneNumber?.type === "pattern" && <span>Please only enter numbers or letters</span>}
+                        {errors.phoneNumber?.type === "required" && <p>This field is required</p>}
+                        {errors.phoneNumber?.type === "pattern" && <p>Please only enter numbers or letters</p>}
                     </div>
                     <div className="inputContainer">
                         <p>Message</p>
                         <textarea {...register("message", { required: true, pattern: /^[a-z0-9]+$/i })} />
                     </div>
                     <div className="error">
-                        {errors.message?.type === "pattern" && <span>Please only enter numbers or letters</span>}
+                        {errors.message?.type === "pattern" && <p>Please only enter numbers or letters</p>}
                     </div>
-                    <div>*Mandtory fields</div>
-                    <div className="submitContainer">
-                    <input type="submit" />
+                    <p>*Mandtory fields</p>
+                    <div className="submit">
+                        <input type="submit" />
                     </div>
-                    
+
                 </form>
             </div>
         </div>
-        
+
     )
 }
 

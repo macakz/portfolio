@@ -50,13 +50,18 @@ body {
 /* contact */
 
 .contactContainer {
-margin: 1em;
+    margin: 1em;
 }
+.contactContainer h1 {
+    margin-left: .5em;
+    }
 
 .formContainer {
     background-color:rgb(236, 233, 233);
+    border: 3px solid rgb(236, 233, 233);
+    border-radius: 1em;
     padding: 1em;
-    
+    margin-top: 1em;    
 
 }
 .inputContainer {
@@ -73,6 +78,10 @@ margin: 1em;
     padding-left: -100px;
 }
 
-.error {
+.formContainer .error {
     color: red
+}
+
+.formContainer .submit {
+padding-top: 1em;
 }
