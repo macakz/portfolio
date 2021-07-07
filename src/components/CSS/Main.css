@@ -57,6 +57,10 @@ body, button, input  {
     text-align: center;
 }
 
+.readMore:hover {
+    color: rgb(250, 197, 117);
+}
+
 /* about */
 .about img {
     height: 400px;
