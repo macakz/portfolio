@@ -33,25 +33,30 @@ body, button, input  {
 
 
 /* blog */
-.blogPost {
+.blog {
     margin: .5em;
     padding: .5em;
     border: 3px solid black;
 }
-.blogPost .imageContainer {
+.blog .imageContainer {
     width: 60%;
     height: auto;
     overflow: hidden;
 }
 
-.blogPost .content {
+.blog .content {
     width: 40%;
     padding-left: .5em;
 }
 
-.blogPost .content button {
+.readMore {
+    background-color: black;
+    border-radius: .5em;
+    color: white;
     width: 10em;
+    text-align: center;
 }
+
 /* about */
 .about img {
     height: 400px;

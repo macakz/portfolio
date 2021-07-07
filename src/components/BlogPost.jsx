@@ -1,7 +1,6 @@
 import React from "react";
 import './CSS/Main.css'
 
-import { Link, } from "react-router-dom";
 
 
 function BlogPost () {
