@@ -1,8 +1,9 @@
 /* general */
 
-body {
+body, button, input  {
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 .imageContainer img {
     max-width: 100%;
@@ -29,6 +30,8 @@ body {
     width: 40%;
     padding-left: .5em;
 }
+
+
 /* blog */
 .blogPost {
     margin: .5em;
@@ -52,8 +55,13 @@ body {
 .contactContainer {
     margin: 1em;
 }
+.contactTitle {
+    border-bottom: 2px solid black;
+
+}
 .contactContainer h1 {
     margin-left: .5em;
+    font-weight: normal;
     }
 
 .formContainer {
@@ -61,8 +69,9 @@ body {
     border: 3px solid rgb(236, 233, 233);
     border-radius: 1em;
     padding: 1em;
-    margin-top: 1em;    
-
+    margin-top: 1em; 
+    font-family: 'Quicksand', sans-serif;
+   
 }
 .inputContainer {
 }
@@ -84,4 +93,8 @@ body {
 
 .formContainer .submit {
 padding-top: 1em;
+}
+
+.formContainer .submit input {
+    width: 5em;
 }
