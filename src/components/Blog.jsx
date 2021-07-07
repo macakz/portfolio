@@ -1,7 +1,7 @@
 import React from "react"
 import './CSS/Main.css'
 import testphoto from '../images/test.jpeg'
-import posts from '../post.json'
+import posts from '../blogPosts.json'
 function Blog () {
 
     return (
@@ -13,7 +13,7 @@ function Blog () {
                             <div className="content">
                                 <h1>{post.title}</h1>
                                 <h3>{post.date}</h3>
-                                <p>{post.content}</p>
+                                <p>{post.blurb}</p>
                                 <button>Read more</button>
                             </div>
                             <div className="imageContainer">

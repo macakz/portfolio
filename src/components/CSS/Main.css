@@ -48,6 +48,10 @@ body, button, input  {
     width: 40%;
     padding-left: .5em;
 }
+
+.blogPost .content button {
+    width: 10em;
+}
 /* work */
 
 /* contact */
@@ -71,16 +75,17 @@ body, button, input  {
     padding: 1em;
     margin-top: 1em; 
     font-family: 'Quicksand', sans-serif;
-
+    width: 100%;
 }
 .inputContainer {
+
 }
 
 .inputContainer input {
-    width: 33%;
+    width:55%;
 }
 .inputContainer textarea {
-    width: 50%;
+    width: 70%;
     height: 10em;
 }
 .inputContainer p {
