@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Work () {
+function About () {
 
     return (
         <div>
@@ -17,4 +17,4 @@ function Work () {
     )
 }
 
-export default Work
+export default About

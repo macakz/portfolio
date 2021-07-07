@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 //information components
 import Blog from './components/Blog';
 import Contact from './components/Contact'
-import Work from './components/Work';
+import About from './components/About';
 
 function App () {
   return (
@@ -24,7 +24,7 @@ function App () {
             <Route exact path="/" component={Home} />
             <Route path="/Blog" component={Blog} />
             <Route path="/Contact" component={Contact} />
-            <Route path="/Work" component={Work} />
+            <Route path="/About" component={About} />
           </Switch>
         </div>
         <Footer />
