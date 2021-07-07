@@ -14,7 +14,7 @@ function Blog () {
                                 <h1>{post.title}</h1>
                                 <h3>{post.date}</h3>
                                 <p>{post.blurb}</p>
-                                <button>Read more</button>
+                                <button onClick={() => {}}>Read more</button>
                             </div>
                             <div className="imageContainer">
                                 <img src={testphoto} alt="" />

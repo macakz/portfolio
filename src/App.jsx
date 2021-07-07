@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Blog from './components/Blog';
 import Contact from './components/Contact'
 import About from './components/About';
+import BlogPost from './components/BlogPost';
 
 function App () {
   return (
@@ -22,9 +23,10 @@ function App () {
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/Blog" component={Blog} />
-            <Route path="/Contact" component={Contact} />
-            <Route path="/About" component={About} />
+            <Route path="/blog" component={Blog} />
+            <Route path="/blogpost" component={BlogPost} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/about" component={About} />
           </Switch>
         </div>
         <Footer />
