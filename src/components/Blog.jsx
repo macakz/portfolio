@@ -1,13 +1,14 @@
 import React from "react"
 import './CSS/Main.css'
 import testphoto from '../data/images/test.jpeg'
-import posts from '../data/blogPosts.json'
+import posts from '../data/posts.json'
 
 function Blog () {
+const showLatest = posts.reverse()
 
     return (
         <>
-            {posts.map(post => {
+            {showLatest.map(post => {
                 return (
                     <div className="blog">
                         <div className="flexbox">

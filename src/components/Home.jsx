@@ -1,7 +1,7 @@
 import React from "react"
 import './CSS/Main.css'
 import testphoto from '../data/images/test.jpeg'
-import posts from '../data/blogPosts.json'
+import posts from '../data/posts.json'
 
 function Home () {
     const latestPost = posts.slice(-1)
