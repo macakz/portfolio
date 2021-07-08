@@ -2,7 +2,6 @@ import React from "react"
 import './CSS/Main.css'
 import testphoto from '../data/images/test.jpeg'
 import posts from '../data/blogPosts.json'
-import { Link, } from "react-router-dom";
 
 function Blog () {
 
@@ -16,9 +15,12 @@ function Blog () {
                                 <h1>{post.title}</h1>
                                 <h3>{post.date}</h3>
                                 <p>{post.blurb}</p>
-                                <div className="readMore">
-                                    <Link to="BlogPost">Read More</Link>
-                                </div>
+                                <a href={post.code}>View the code for {post.title} here</a>
+                                {post.deploy
+                                    ?
+                                    <a className="flexbox" href="github.com">View the deployed project!</a>
+                                    : null
+                                }
                             </div>
                             <div className="imageContainer">
                                 <img src={testphoto} alt="" />

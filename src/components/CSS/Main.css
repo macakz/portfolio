@@ -49,17 +49,7 @@ body, button, input  {
     padding-left: .5em;
 }
 
-.readMore {
-    background-color: black;
-    border-radius: .5em;
-    color: white;
-    width: 10em;
-    text-align: center;
-}
 
-.readMore:hover {
-    color: rgb(250, 197, 117);
-}
 
 /* about */
 .about img {
