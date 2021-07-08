@@ -19,11 +19,7 @@ function Home () {
                         <h3>{latestPost[0].date}</h3>
                         <p>to read more about this project and this one click below</p>
                         <br />
-                        <div>
-                            <Link className="readMore" to="/blog">Read more...</Link>
-
-                        </div>
-
+                        <Link className="readMore" to="/blog">Read more...</Link>
                     </div>
                 </div>
             </div>

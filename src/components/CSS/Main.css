@@ -31,6 +31,9 @@ body, button, input  {
     padding-left: .5em;
 }
 
+.banner .content p {
+    border-bottom: 2px solid black;
+}
 .readMore {
     background-color: black;
     color: white;
