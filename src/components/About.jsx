@@ -10,13 +10,14 @@ function About () {
                 <div className="flexbox">
                     <div className="content">
                         <h1>hi</h1>
-                        <h3>hi</h3>
                         <p></p>
                     </div>
                     <div>
-                        <img src={profile} alt="" />
+                        <img src={profile} alt="profilepicture" />
                     </div>
-                    <a href={resume} download>download my resume!</a>
+                    <div className="resume">
+                        <a href={resume} download>Download my resume </a>
+                    </div>
                 </div>
             </div>
         </>
