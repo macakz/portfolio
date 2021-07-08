@@ -31,6 +31,19 @@ body, button, input  {
     padding-left: .5em;
 }
 
+.readMore {
+    background-color: black;
+    color: white;
+    padding: .5em;
+    border: 3px solid black;
+    border-radius: 2em;
+}
+
+.readMore:hover {
+    color:rgb(102, 101, 101) ;
+    border: 3px solid rgb(102, 101, 101);
+}
+
 
 /* blog */
 .blog {
@@ -82,7 +95,6 @@ text-decoration: underline;}
 .resume:hover {
     color:rgb(102, 101, 101) ;
     border: 3px solid rgb(102, 101, 101);
-    
 }
 
 /* contact */
