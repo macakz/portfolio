@@ -16,7 +16,7 @@ function About () {
                         <img src={profile} alt="profilepicture" />
                     </div>
                     <div className="resume">
-                        <a href={resume} download>Download my resume </a>
+                        <a href={resume} download>Download my resumé</a>
                     </div>
                 </div>
             </div>
