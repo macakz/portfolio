@@ -20,7 +20,7 @@ function Home () {
                         <a href={latestPost[0].code}>View the code for {latestPost[0].title} here</a>
                         {latestPost[0].deploy
                             ?
-                            <a className="flexbox" href={latestPost[0].deploy}>View the deployed project!</a>
+                            <a className="flexbox" href={latestPost[0].deploy} target="_blank" rel="noopener noreferrer">View the deployed project!</a>
                             : null
                         }
                     </div>
