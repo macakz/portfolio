@@ -19,6 +19,7 @@ function About () {
                         <a href={resume} download>Download my resumé</a>
                     </div>
                 </div>
+
             </div>
         </>
     )

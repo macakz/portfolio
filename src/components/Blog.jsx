@@ -4,7 +4,7 @@ import testphoto from '../data/images/test.jpeg'
 import posts from '../data/posts.json'
 
 function Blog () {
-const showLatest = posts.reverse()
+    const showLatest = posts.reverse()
 
     return (
         <>
@@ -15,11 +15,12 @@ const showLatest = posts.reverse()
                             <div className="content">
                                 <h1>{post.title}</h1>
                                 <h3>{post.date}</h3>
-                                <p>{post.blurb}</p>
-                                <a href={post.code}>View the code for {post.title} here</a>
+                                <p>{post.blurb}View the code for hereView the code for hereView the code for hereView the code for hereView the code for hereView the code for hereView the code for hereView the code for herevView the code for hereView the code for hereView the code for hereView the code for hereView the code for here</p>
+
+                                <a className="code" href={post.code}>View the code for here</a>
                                 {post.deploy
                                     ?
-                                    <a className="flexbox" href="github.com">View the deployed project!</a>
+                                    <a className="flexbox deploy" href="github.com">View it deployed here!</a>
                                     : null
                                 }
                             </div>

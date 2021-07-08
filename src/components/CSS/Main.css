@@ -47,8 +47,16 @@ body, button, input  {
 .blog .content {
     width: 40%;
     padding-left: .5em;
+    padding-right: 1em;
 }
 
+.blog .content p{
+    border-bottom: 2px solid black;
+}
+
+.blog .content a {
+    font-weight: bold;
+}
 
 
 /* about */
@@ -63,7 +71,7 @@ body, button, input  {
     padding: 1em;
     border: 3px solid black;
     border-radius: 2em;
-    margin:  1em
+    margin: 1em;
 }
 
 .resume:hover {
