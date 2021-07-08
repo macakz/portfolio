@@ -1,6 +1,6 @@
 import React from "react";
 import profile from '../data/images/profile.jpg'
-
+import resume from '../data/Resume.pdf'
 
 function About () {
 
@@ -16,6 +16,7 @@ function About () {
                     <div>
                         <img src={profile} alt="" />
                     </div>
+                    <a href={resume} download>download my resume!</a>
                 </div>
             </div>
         </>
