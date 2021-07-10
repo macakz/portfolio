@@ -15,8 +15,7 @@ function Blog () {
                             <div className="content">
                                 <h1>{post.title}</h1>
                                 <h3>{post.date}</h3>
-                                <p>{post.blurb}View the code for hereView the code for hereView the code for hereView the code for hereView the code for hereView the code for hereView the code for hereView the code for herevView the code for hereView the code for hereView the code for hereView the code for hereView the code for here</p>
-
+                                <p>{post.content}</p>
                                 <a className="code" href={post.code}>View the code for here</a>
                                 {post.deploy
                                     ?
