@@ -1,6 +1,5 @@
 import React from "react"
 import './CSS/Main.css'
-import testphoto from '../data/images/test.jpeg'
 import posts from '../data/posts.json'
 
 function Blog () {
@@ -24,7 +23,7 @@ function Blog () {
                                 }
                             </div>
                             <div className="imageContainer">
-                                <img src={testphoto} alt="" />
+                                <img src={require(`../data/images/blogposts/${post.image}`).default} alt="csgo" />
                             </div>
                         </div>
                     </div>
