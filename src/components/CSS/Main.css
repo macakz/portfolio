@@ -99,7 +99,9 @@ text-decoration: underline;}
     color:rgb(102, 101, 101) ;
     border: 3px solid rgb(102, 101, 101);
 }
+.about img {
 
+    }
 /* contact */
 
 .contactContainer {
