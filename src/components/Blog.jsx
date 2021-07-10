@@ -24,7 +24,7 @@ function Blog () {
                                 }
                             </div>
                             <div className="imageContainer">
-                                <img src={require(`../data/images/blogposts/${post.image}`).default} alt="csgo" />
+                                <img src={require(`../data/images/blogposts/${post.image}`).default} alt={post.imageAlt} />
                             </div>
                         </div>
                     </div>

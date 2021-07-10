@@ -11,7 +11,7 @@ function Home () {
             <div className="banner">
                 <div className="flexbox">
                     <div className="imageContainer">
-                        <img src={require(`../data/images/blogposts/${latestPost[0].image}`).default} alt="" />
+                        <img src={require(`../data/images/blogposts/${latestPost[0].image}`).default} alt={latestPost[0].imageAlt} />
                     </div>
                     <div className="content">
                         <h1>{latestPost[0].title}</h1>
