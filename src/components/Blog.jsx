@@ -16,10 +16,10 @@ function Blog () {
                                 <h3>{post.date}</h3>
                                 <h4>Built with: {post.tech}</h4>
                                 <p>{post.content}</p>
-                                <a className="code" href={post.code}>View the code for here</a>
+                                <a className="code" target="_blank" rel="noopener noreferrer" href={post.code}>View the code for here</a>
                                 {post.deploy
                                     ?
-                                    <a className="flexbox deploy" href={post.deploy}>View it deployed here!</a>
+                                    <a className="flexbox deploy"  target="_blank" rel="noopener noreferrer" href={post.deploy}>View it deployed here!</a>
                                     : null
                                 }
                             </div>
