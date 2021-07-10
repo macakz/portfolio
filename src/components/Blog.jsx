@@ -14,6 +14,7 @@ function Blog () {
                             <div className="content">
                                 <h1>{post.title}</h1>
                                 <h3>{post.date}</h3>
+                                <h4>Built with: {post.tech}</h4>
                                 <p>{post.content}</p>
                                 <a className="code" href={post.code}>View the code for here</a>
                                 {post.deploy
