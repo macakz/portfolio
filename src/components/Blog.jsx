@@ -19,7 +19,7 @@ function Blog () {
                                 <a className="code" href={post.code}>View the code for here</a>
                                 {post.deploy
                                     ?
-                                    <a className="flexbox deploy" href="github.com">View it deployed here!</a>
+                                    <a className="flexbox deploy" href={post.deploy}>View it deployed here!</a>
                                     : null
                                 }
                             </div>
