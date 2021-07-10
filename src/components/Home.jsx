@@ -1,6 +1,5 @@
 import React from "react"
 import './CSS/Main.css'
-import testphoto from '../data/images/test.jpeg'
 import posts from '../data/posts.json'
 import { Link, } from "react-router-dom";
 
@@ -12,7 +11,7 @@ function Home () {
             <div className="banner">
                 <div className="flexbox">
                     <div className="imageContainer">
-                        <img src={testphoto} alt="" />
+                        <img src={require(`../data/images/blogposts/${latestPost[0].image}`).default} alt="" />
                     </div>
                     <div className="content">
                         <h1>{latestPost[0].title}</h1>
