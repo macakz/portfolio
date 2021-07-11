@@ -1,8 +1,6 @@
-import { useState } from "react";
 import profile from '../data/images/profile.jpg'
 import resume from '../data/Resume.pdf'
 import instagramFeedConfig from "./instagramFeedConfig"
-import axios from 'axios'
 import InstagramFeed from "./InstagramFeed";
 
 function About () {
@@ -16,7 +14,6 @@ function About () {
                         <h1>hi</h1>
                         <p></p>
                     </div>
-
                     <div className="resume">
                         <a href={resume} download>Download my resumé</a>
                     </div>
