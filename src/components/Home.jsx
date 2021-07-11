@@ -1,5 +1,5 @@
 import React from "react"
-import './CSS/Main.css'
+import '../CSS/Main.css'
 import posts from '../data/posts.json'
 import { Link, } from "react-router-dom";
 

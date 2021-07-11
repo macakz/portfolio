@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import emailjs from 'emailjs-com';
 import { userID, serviceID } from './config'
+import '../CSS/Main.css'
 
 function Contact () {
     const { register, handleSubmit, formState: { errors } } = useForm();
