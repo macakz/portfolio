@@ -6,7 +6,6 @@ import InstagramFeed from "./Instagram/InstagramFeed";
 function About () {
     return (
         <>
-        <InstagramFeed token={instagramFeedConfig.accessToken} limit={12}/>
             <div className="about" >
                 <img src={profile} alt="profilepicture" />
                 <div className="flexbox">
@@ -18,7 +17,9 @@ function About () {
                         <a href={resume} download>Download my resumé</a>
                     </div>
                 </div>
-
+                <div className="instaContainer">
+                <InstagramFeed token={instagramFeedConfig.accessToken} limit={6}/>
+                </div>
             </div>
         </>
     )
