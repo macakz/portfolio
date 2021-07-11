@@ -1,8 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 #config
-config.js
-
+mailConfig.js
+instaConfig.js
 # dependencies
 /node_modules
 /.pnp
@@ -27,5 +27,5 @@ yarn-error.log*
 # files
 posts.json
 Resume.pdf
-instagramFeedConfig.js
+
 
