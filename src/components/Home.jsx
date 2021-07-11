@@ -7,7 +7,6 @@ function Home () {
     const latestPost = posts.slice(-1)
     return (
         <>
-
             <div className="banner">
                 <div className="flexbox">
                     <div className="imageContainer">

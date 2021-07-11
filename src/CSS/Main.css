@@ -40,11 +40,11 @@ body, button, input  {
     padding: .5em;
     border: 3px solid black;
     border-radius: 2em;
+    transition: all 100ms ease-out;
 }
 
 .readMore:hover {
     color:rgb(102, 101, 101) ;
-    border: 3px solid rgb(102, 101, 101);
 }
 
 
@@ -97,7 +97,6 @@ text-decoration: underline;}
 
 .resume:hover {
     color:rgb(102, 101, 101) ;
-    border: 3px solid rgb(102, 101, 101);
 }
 
 .instaContainer {
