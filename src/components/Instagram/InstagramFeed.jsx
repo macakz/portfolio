@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import Feed from './Feed'
@@ -7,8 +7,7 @@ import '../../CSS/InstagramFeed.css'
 const InstagramFeed = ({ token, ...props }) => {
 
     const [feeds, setFeedsData] = useState([])
-    const tokenProp = useRef(token)
-    tokenProp.current = token
+    
 
     useEffect(() => {
         const abortController = new AbortController()
@@ -16,7 +15,7 @@ const InstagramFeed = ({ token, ...props }) => {
         async function fetchInstagramPost () {
             try {
                 axios
-                    .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${props.token}`)
+                    .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${token}`)
                     .then((resp) => {
                         setFeedsData(resp.data.data)
                     })

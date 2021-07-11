@@ -76,7 +76,7 @@ text-decoration: underline;}
 
 .blog .content a {
     font-weight: bold;
-    padding-bottom: .5em;
+    text-decoration: underline;
 }
 
 
