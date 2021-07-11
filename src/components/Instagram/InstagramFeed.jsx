@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useRef} from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 
 import Feed from './Feed'
-import '../CSS/InstagramFeed.css'
+import '../../CSS/InstagramFeed.css'
 
-const InstagramFeed = ({token, ...props}) => {
+const InstagramFeed = ({ token, ...props }) => {
+
     const [feeds, setFeedsData] = useState([])
     const tokenProp = useRef(token)
     tokenProp.current = token

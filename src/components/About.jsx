@@ -1,7 +1,7 @@
 import profile from '../data/images/profile.jpg'
 import resume from '../data/Resume.pdf'
 import instagramFeedConfig from "../config/instaConfig"
-import InstagramFeed from "./InstagramFeed";
+import InstagramFeed from "./Instagram/InstagramFeed";
 
 function About () {
     return (

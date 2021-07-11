@@ -6,8 +6,8 @@ import './CSS/App.css';
 import Home from './components/Home';
 
 //header & footer components
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/Header&Footer/Header';
+import Footer from './components/Header&Footer/Footer';
 
 //information components
 import Blog from './components/Blog';
