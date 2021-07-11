@@ -7,41 +7,55 @@ const Feed = (props) => {
     switch (media_type) {
         case "VIDEO":
             post = (
-                <video
-                    width='100%'
-                    height='auto'
-                    src={media_url}
-                    type="video/mp4"
-                    caption={caption}
-                    controls playsInline
-                    >
-                    
-                </video>
+                <>
+                    <figure>
+                        <video
+                            width='100%'
+                            height='auto'
+                            src={media_url}
+                            type="video/mp4"
+                            caption={caption}
+                            controls playsInline
+                        >
+                        </video>
+                        <figcaption>{caption}.toLowerCase()</figcaption>
+                    </figure>
+                </>
+
             )
             break;
         case "CAROUSEL_ALBUM":
             post = (
-                <img
-                    width='100%'
-                    height='auto'
-                    id={id}
-                    src={media_url}
-                    alt={caption}
-                    caption={caption}
-                />
+                <>
+                    <figure>
+                        <img
+                            width='100%'
+                            height='auto'
+                            id={id}
+                            src={media_url}
+                            alt={caption}
+                            caption={caption}
+                        />
+                        <figcaption>{caption.toLowerCase()}</figcaption>
+                    </figure>
+                </>
             );
             break;
         default:
             post = (
-                <img
-                    width='100%'
-                    height='auto'
-                    id={id}
-                    src={media_url}
-                    alt={caption}
-                    caption={caption}
-
-                />
+                <>
+                    <figure>
+                        <img
+                            width='100%'
+                            height='auto'
+                            id={id}
+                            src={media_url}
+                            alt={caption}
+                            caption={caption}
+                        />
+                        <figcaption>{caption.toLowerCase()}</figcaption>
+                    </figure>
+                </>
             );
     }
 
