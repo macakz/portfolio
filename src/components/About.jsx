@@ -18,6 +18,7 @@ function About () {
                     </div>
                 </div>
                 <div className="instaContainer">
+                    <h1>what I've been up to...</h1>
                 <InstagramFeed token={instagramFeedConfig.accessToken} limit={6}/>
                 </div>
             </div>
