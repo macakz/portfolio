@@ -17,7 +17,7 @@ function Blog () {
                                 <h4>Built with: {post.tech}</h4>
                                 <p>{post.content}</p>
                                 <div className="flexbox">
-                                    <a className="code" target="_blank" rel="noopener noreferrer" href={post.code}>View the code for here asdasd  {' '}</a>
+                                    <a className="code" target="_blank" rel="noopener noreferrer" href={post.code}>View the code for here</a>
                                     {post.deploy
                                         ?
                                         <a className="flexbox deploy" target="_blank" rel="noopener noreferrer" href={post.deploy}>or view it deployed here</a>
