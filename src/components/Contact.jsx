@@ -11,9 +11,8 @@ function Contact () {
             console.log('SUCCESS!', response.status, response.text);
         }, (err) => {
             console.log('FAILED...', err);
-        });
+        })
     return (
-
         <div className="contactContainer">
             <div className="contactTitle">
                 <h1>Send me a message</h1>
@@ -46,19 +45,16 @@ function Contact () {
                     </div>
                     <div className="inputContainer">
                         <p>Subject*</p>
-                        <input  {...register("subject", { required: true, pattern: /^[a-z0-9]+$/i })} />
+                        <input  {...register("subject", { required: true})} />
                     </div>
                     <div className="error">
                         {errors.phoneNumber?.type === "required" && <p>Subject field is required</p>}
-                        {errors.phoneNumber?.type === "pattern" && <p>Please only enter numbers or letters</p>}
                     </div>
                     <div className="inputContainer">
                         <p>Message</p>
-                        <textarea {...register("message", { required: true, pattern: /^[a-z0-9]+$/i })} />
+                        <textarea {...register("message")} />
                     </div>
-                    <div className="error">
-                        {errors.message?.type === "pattern" && <p>Please only enter numbers or letters</p>}
-                    </div>
+                    
                     <p>*Mandtory fields</p>
                     <div className="submit">
                         <input type="submit" />
