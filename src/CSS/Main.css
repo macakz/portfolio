@@ -9,6 +9,7 @@ body, button, input  {
     max-width: 100%;
     height: auto;
     display: block;
+    border: 2px solid black;
 }
 .flexbox {
     display: flex;
@@ -18,7 +19,6 @@ body, button, input  {
 .banner {
     margin: .5em;
     padding: .5em;
-    border: 3px solid black;
 }
 .banner .imageContainer {
     width: 60%;
