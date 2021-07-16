@@ -14,7 +14,7 @@
         "title": "Anzac Day Quiz",
         "date": "16/10/2021",
         "tech": "React",
-        "content": "One of my first little projects where I create the classic minesweepr game with some CSGO flavour.",
+        "content": "First project built with React built on ANZAC day. A simple 10 question long quiz that tracks your score throughout. ",
         "code": "https://github.com/macakz/ie-team",
         "deploy": "",
         "image": "anzac.png"
