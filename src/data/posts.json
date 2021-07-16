@@ -5,9 +5,18 @@
         "date": "10/07/21",
         "tech": "HTML, CSS, JS",
         "content": "One of my first little projects where I create the classic minesweepr game with some CSGO flavour.",
+        "code": "",
+        "deploy": "https://macakz.github.io/minesweeper/",
+        "image": "csgo1.png"
+    },
+    {
+        "id": 0,
+        "title": "Minesweeper (CSGO Edition)",
+        "date": "10/07/21",
+        "tech": "HTML, CSS, JS",
+        "content": "One of my first little projects where I create the classic minesweepr game with some CSGO flavour.",
         "code": "https://github.com/macakz/minesweeper",
         "deploy": "https://macakz.github.io/minesweeper/",
         "image": "csgo1.png"
     }
-
 ]
