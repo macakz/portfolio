@@ -5,13 +5,17 @@ import { userID, serviceID } from '../config/mailConfig'
 import '../CSS/Main.css'
 
 function Contact () {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => emailjs.send(serviceID, 'contactForm', data, userID)
-        .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-        }, (err) => {
-            console.log('FAILED...', err);
-        })
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    const onSubmit = data => {
+        emailjs.send(serviceID, 'contactForm', data, userID)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text)
+            }, (err) => {
+                console.log('FAILED...', err)
+            })
+            .then(alert("Message sent"))
+            .finally(reset())
+    }
     return (
         <div className="contactContainer">
             <div className="contactTitle">
@@ -45,7 +49,7 @@ function Contact () {
                     </div>
                     <div className="inputContainer">
                         <p>Subject*</p>
-                        <input  {...register("subject", { required: true})} />
+                        <input  {...register("subject", { required: true })} />
                     </div>
                     <div className="error">
                         {errors.phoneNumber?.type === "required" && <p>Subject field is required</p>}
@@ -54,7 +58,7 @@ function Contact () {
                         <p>Message</p>
                         <textarea {...register("message")} />
                     </div>
-                    
+
                     <p>*Mandtory fields</p>
                     <div className="submit">
                         <input type="submit" />
