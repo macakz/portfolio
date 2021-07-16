@@ -7,7 +7,9 @@ function About () {
     return (
         <>
             <div className="about" >
-                <img src={profile} alt="profilepicture" />
+                <div className="profilePic">
+                    <img src={profile} alt="profilepicture" />
+                </div>
                 <div className="flexbox">
                     <div className="content">
                         <h1>hi</h1>
@@ -19,7 +21,7 @@ function About () {
                 </div>
                 <div className="instaContainer">
                     <h1>what I've been up to...</h1>
-                <InstagramFeed token={instagramFeedConfig.accessToken} limit={6}/>
+                    <InstagramFeed token={instagramFeedConfig.accessToken} limit={6} />
                 </div>
             </div>
         </>

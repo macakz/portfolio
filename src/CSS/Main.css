@@ -86,7 +86,13 @@ text-decoration: underline;}
 /* about */
 .about img {
     height: 400px;
-    border-radius: 5%
+    border-radius: 5%;
+
+}
+.profilePic {
+    padding-top: 1em;
+    display: block;
+    text-align: center;
 }
 
 .resume {
