@@ -56,7 +56,10 @@ function Contact () {
                     </div>
                     <div className="inputContainer">
                         <p>Message</p>
-                        <textarea {...register("message")} />
+                        <textarea {...register("message", { maxLength: 250})} />
+                    </div>
+                    <div className="error">
+                        {errors.message?.type === "maxLength" && <p>Sorry please shorten your message</p>}
                     </div>
 
                     <p>*Mandtory fields</p>
