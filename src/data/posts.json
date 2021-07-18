@@ -18,5 +18,15 @@
         "code": "https://github.com/macakz/ie-team",
         "deploy": "",
         "image": "anzac.png"
+    },
+    {
+        "id": 2,
+        "title": "The Reactive Calculator (ios style)",
+        "date": "18/10/2021",
+        "tech": "React & math.js",
+        "content": "One of the first javascript projects I tried a few months back and never finished. I knew I wanted to revisit it and had alot of fun on a Saturday afternoon.",
+        "code": "https://github.com/macakz/calculator",
+        "deploy": "https://macakz.github.io/calculator/",
+        "image": "calculator.png"
     }
 ]

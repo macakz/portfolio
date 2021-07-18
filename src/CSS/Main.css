@@ -31,6 +31,10 @@ body, button, input  {
     padding-left: .5em;
 }
 
+.banner img {
+    height: 500px;
+}
+
 .banner .content p {
     border-bottom: 2px solid black;
 }
@@ -79,7 +83,8 @@ text-decoration: underline;}
     text-decoration: underline;
 }
 .blog img {
-    border: 2px solid black;
+    border: px solid black;
+    height: 400px
 }
 
 
