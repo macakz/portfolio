@@ -4,7 +4,19 @@ import posts from '../data/posts.json'
 import { Link, } from "react-router-dom";
 
 function Home () {
-    const latestPost = posts.slice(-1)
+    function sortById (a, b) {
+        const idA = a.id
+        const idB = b.id
+
+        let comparison = 0;
+        if (idA < idB) {
+            comparison = 1;
+        } else if (idA > idB) {
+            comparison = -1;
+        }
+        return comparison;
+    }
+    const latestPost = posts.sort(sortById)
     return (
         <>
             <div className="banner">

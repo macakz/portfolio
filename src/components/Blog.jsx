@@ -3,13 +3,25 @@ import '../CSS/Main.css'
 import posts from '../data/posts.json'
 
 function Blog () {
-    const showLatest = posts.reverse()
+    function sortById (a, b) {
+        const idA = a.id
+        const idB = b.id
+
+        let comparison = 0;
+        if (idA < idB) {
+            comparison = 1;
+        } else if (idA > idB) {
+            comparison = -1;
+        }
+        return comparison;
+    }
+    const showLatest = posts.sort(sortById)
 
     return (
         <>
             {showLatest.map(post => {
                 return (
-                    <div className="blog">
+                    <div key={post.id} className="blog">
                         <div className="flexbox">
                             <div className="content">
                                 <h1>{post.title}</h1>
