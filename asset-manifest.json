@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3557db1b.chunk.css",
-    "main.js": "/portfolio/static/js/main.9d35e14b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9d35e14b.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.bcd5af5a.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.bcd5af5a.js.map",
-    "static/js/2.e2faf326.chunk.js": "/portfolio/static/js/2.e2faf326.chunk.js",
-    "static/js/2.e2faf326.chunk.js.map": "/portfolio/static/js/2.e2faf326.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/main.3557db1b.chunk.css.map": "/portfolio/static/css/main.3557db1b.chunk.css.map",
-    "static/js/2.e2faf326.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e2faf326.chunk.js.LICENSE.txt",
-    "static/media/Resume.50a1b59c.pdf": "/portfolio/static/media/Resume.50a1b59c.pdf",
-    "static/media/anzac.png": "/portfolio/static/media/anzac.50a4d370.png",
-    "static/media/calculator.png": "/portfolio/static/media/calculator.f9dbbf62.png",
-    "static/media/csgo.png": "/portfolio/static/media/csgo.e5e05b27.png",
-    "static/media/profile.669493ba.jpg": "/portfolio/static/media/profile.669493ba.jpg"
+    "main.css": "/static/css/main.48557d0a.chunk.css",
+    "main.js": "/static/js/main.5267f309.chunk.js",
+    "main.js.map": "/static/js/main.5267f309.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5ebc510a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5ebc510a.js.map",
+    "static/js/2.e2faf326.chunk.js": "/static/js/2.e2faf326.chunk.js",
+    "static/js/2.e2faf326.chunk.js.map": "/static/js/2.e2faf326.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.48557d0a.chunk.css.map": "/static/css/main.48557d0a.chunk.css.map",
+    "static/js/2.e2faf326.chunk.js.LICENSE.txt": "/static/js/2.e2faf326.chunk.js.LICENSE.txt",
+    "static/media/Resume.50a1b59c.pdf": "/static/media/Resume.50a1b59c.pdf",
+    "static/media/anzac.png": "/static/media/anzac.50a4d370.png",
+    "static/media/calculator.png": "/static/media/calculator.f9dbbf62.png",
+    "static/media/csgo.png": "/static/media/csgo.e5e05b27.png",
+    "static/media/profile.669493ba.jpg": "/static/media/profile.669493ba.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bcd5af5a.js",
+    "static/js/runtime-main.5ebc510a.js",
     "static/js/2.e2faf326.chunk.js",
-    "static/css/main.3557db1b.chunk.css",
-    "static/js/main.9d35e14b.chunk.js"
+    "static/css/main.48557d0a.chunk.css",
+    "static/js/main.5267f309.chunk.js"
   ]
 }
