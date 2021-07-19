@@ -16,7 +16,8 @@ function Home () {
                     <div className="content">
                         <h1>{latestPost[0].title}</h1>
                         <h3>{latestPost[0].date}</h3>
-                        <p>Click below to check out this and more awesome projects!</p>
+                        <br />
+                        <p>Click below to check out more projects of mine</p>
                         <br />
                         <Link className="readMore" to="/blog">Read more...</Link>
                     </div>
